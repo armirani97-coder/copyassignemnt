@@ -48,7 +48,7 @@ public class Mavenproject3 {
         for(int i=0;i<12;i++){
         System.out.println(months[i]+"="+temprature2024[i]+"Celcius");
         }
-        //------- True or false if the data is equal-----//
+        //------- True or false if the data has the same data-----//
         //------Boolean true or false------//
         boolean dataisidentical=true;
         for(int i=0;i<12;i++){
@@ -56,6 +56,7 @@ public class Mavenproject3 {
         {dataisidentical=false;}
         } System.out.println("Do the year 2023 and 2024 have the same data?");
         System.out.println("The answer is\t" + dataisidentical);
+        //---- Average for 2023 and 2024------//
         float average2023=sumtemprature2023/12;
         float average2024=sumtemprature2024/12;
         System.out.println("The average temprature for 2023 =\n"+ average2023+"celcius");
