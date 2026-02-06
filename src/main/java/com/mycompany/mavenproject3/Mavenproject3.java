@@ -26,14 +26,18 @@ public class Mavenproject3 {
         System.out.println("Enter temprature for the months of 2023:");
         for(int i=0;i<12;i++){
         System.out.print(months[i]+"=");
-        temprature2023[i]=s.nextFloat();}
+        temprature2023[i]=s.nextFloat();
+         //--Average for 2023 ---//
+        sumtemprature2023=sumtemprature2023+temprature2023[i];}
         
         
         //--------2024 temprature iput 2024----//
         System.out.println("Enter temprature for the months of 2024:");
         for(int i=0;i<12;i++){
         System.out.print(months[i]+"=");
-        temprature2024[i]=s.nextFloat();}
+        temprature2024[i]=s.nextFloat();
+        //--Average for 2024---//
+        sumtemprature2024=sumtemprature2024+temprature2024[i];}
         //-----Temprature display for 2023 and 2024----//
         
         System.out.println("\ntemprature for the months of 2023:");
@@ -52,6 +56,10 @@ public class Mavenproject3 {
         {dataisidentical=false;}
         } System.out.println("Do the year 2023 and 2024 have the same data?");
         System.out.println("The answer is\t" + dataisidentical);
+        float average2023=sumtemprature2023/12;
+        float average2024=sumtemprature2024/12;
+        System.out.println("The average temprature for 2023 =\n"+ average2023+"celcius");
+        System.out.println("The average temprature for 2024 =\n"+ average2024+"celcius");
         
          
       
